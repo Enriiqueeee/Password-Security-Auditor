@@ -44,7 +44,7 @@ Password Security Auditor/
 Clona el repositorio:
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone (https://github.com/Enriiqueeee/Password-Security-Auditor)
 cd "Password Security Auditor"
 ```
 
