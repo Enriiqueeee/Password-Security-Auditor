@@ -152,11 +152,11 @@ def comprobar_seguridad(password, wordlist):
 
 def mostrar_resultado(resultados, puntuacion, diccionario, patrones):
 
-    table = Table(title="Password Security Assessment")
+    table = Table(title="\nPolitica de seguridad")
 
     table.add_column(
         "Criterio",
-        style="cyan",
+        style="blue",
         no_wrap=True
     )
 
@@ -174,7 +174,7 @@ def mostrar_resultado(resultados, puntuacion, diccionario, patrones):
     console.print(table)
 
     console.print(
-        f"\nPuntuación total: [bold]{puntuacion}[/bold] de 5\n"
+        f"Puntuación total: [bold]{puntuacion}[/bold] de 5\n"
     )
 
     if puntuacion < 3:
@@ -210,13 +210,13 @@ def mostrar_resultado(resultados, puntuacion, diccionario, patrones):
     if patrones:
 
         console.print(
-            f"[red]⚠ Patrón común detectado: {patrones}[/red]"
+            f"[red]⚠ Patrón común detectado: {patrones}[/red]\n"
         )
 
     else:
 
         console.print(
-            "[green]✓ No se han detectado patrones comunes.[/green]"
+            "[green]✓ No se han detectado patrones comunes.[/green]\n"
         )
 
 
@@ -227,7 +227,6 @@ if __name__ == "__main__":
     console.print(
         Panel(
             "PASSWORD SECURITY AUDITOR",
-            subtitle="Security assessment tool",
             expand=False
         )
     )
